@@ -9,36 +9,35 @@
     />
 </head>
 <style>
-    .kakao{
-        background-color: #f7e111;
-        text-align: center;
-        padding-block: 15px;
-        border-radius: 5px;
-        font-weight: 900;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin-top: 5px;
-    }
 
+    /* 로그인 */
     .normal{
         background-color: black;
         color: white;
-        text-align: center;
-        width: 400px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border-radius: 5px;
-        font-weight: 900;
     }
 
+    /* 카카오 */
+    .kakao{
+        background-color: #f7e111;
+    }
+
+
+    /* 애플 */
     .apple{
         background-color: white;
+        border: 1px solid #ddd;
+    }
+
+    /* 버튼 공통 */
+    .btn{
+        width: 400px;
         text-align: center;
         padding-block: 15px;
-        border: 1px solid #ddd;
         border-radius: 5px;
         font-weight: 900;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         margin-top: 5px;
+        cursor: pointer;
     }
 
     .register{
@@ -52,7 +51,7 @@
         margin-top: 5px;
     }
 
-    .button{
+    .button_signup{
         border: 1px solid #0078ff;
         border-radius: 5px;
         padding: 5px;
@@ -60,18 +59,18 @@
 
 </style>
 <body>
-    <div class="normal">로그인</div>
-    <div class="kakao">
+    <div class="normal btn">로그인</div>
+    <div class="kakao btn">
         <i class="fa-solid fa-comment"></i>
         <span>카카오 로그인</span>
     </div>
-    <div class="apple">
+    <div class="apple btn">
         <i class="fa-brands fa-apple"></i>
         <span>Apple 로그인</span>
     </div>
     <div class="register">
         <span>가입 즉시 20% 할인 쿠폰 지급</span> 
-        <span class="button">회원가입</span>
+        <span class="button_signup">회원가입</span>
     </div>
 </body>
 </html>
