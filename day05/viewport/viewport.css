@@ -1,0 +1,12 @@
+.box{
+    width: 50vw;
+    height: 50vh;
+    background-color: skyblue;
+    transition: all 0.5s;
+}
+
+.box:hover{
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+}
