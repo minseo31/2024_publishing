@@ -6,13 +6,13 @@
     <title>Coffee</title>
     <link rel="stylesheet" href="../../common/reset.css">
 </head>
-
         <style>
             .container{
                 width: fit-content;
                 height: fit-content;
                 display: flex;
                 gap: 5px;
+                /* animation: scale-up-ver-bottom 10s infinite linear; */
             }
 
             .box{
@@ -24,6 +24,7 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 20px 10px 20px 10px;
+                position: relative;
 
             }
 
@@ -32,6 +33,7 @@
                 height: 150px;
                 object-fit: cover;
                 transition: all 0.3s;
+                /* animation: abc 5s linear infinite; */
             }
 
             img:hover{
@@ -42,6 +44,7 @@
                 text-align: center;
                 font-size: small;
                 font-weight: bold;
+                /* animation: test 2s; */
             }
             
             button{
@@ -50,29 +53,149 @@
                 border: none;
                 padding: 2px 5px 2px 5px;
             }
-        </style>
 
+            .mask{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.7);
+                transition: all 0.3s;
+                font-weight: bold;
+                cursor: not-allowed;
+            }
+
+            .mask:hover{
+                opacity: 1;
+            }
+
+            @keyframes test {
+                0%{
+                    transform: translateX(0);
+                    color: pink;
+                }
+                20%{
+                    transform: translateX(30px);
+                    color: violet;
+                }
+                40%{
+                    transform: translateX(0px);
+                    color: plum;
+                }
+                60%{
+                    transform: translateX(-30px);
+                    color: rosybrown;
+                }
+                80%{
+                    transform: translateX(0);
+                    color: red;
+                }
+                100%{
+                    transform: translateX(0);
+                    color: gray;
+                }
+            }
+
+            @keyframes abc {
+                0%{
+                    transform: rotateY(0deg);
+                }
+                20%{
+                    transform: rotateY(80deg);
+                }
+                40%{
+                    transform: rotateY(160deg);
+                }
+                60%{
+                    transform: rotateY(240deg);
+                }
+                80%{
+                    transform: rotateY(320deg);
+                }
+                100%{
+                    transform: rotateY(360deg);
+                }
+            }
+
+            @keyframes aaa {
+                 from{
+                    transform: rotateY(0deg);
+                 }
+                 to{
+                    transform: rotateX();
+                 }
+            }
+
+            @-webkit-keyframes scale-up-ver-bottom {
+            0% {
+                -webkit-transform: scaleY(0.4);
+                        transform: scaleY(0.4);
+                -webkit-transform-origin: 0% 100%;
+                        transform-origin: 0% 100%;
+            }
+            100% {
+                -webkit-transform: scaleY(1);
+                        transform: scaleY(1);
+                -webkit-transform-origin: 0% 100%;
+                        transform-origin: 0% 100%;
+            }
+            }
+            @keyframes scale-up-ver-bottom {
+            0% {
+                -webkit-transform: scaleY(0.4);
+                        transform: scaleY(0.4);
+                -webkit-transform-origin: 0% 100%;
+                        transform-origin: 0% 100%;
+            }
+            100% {
+                -webkit-transform: scaleY(1);
+                        transform: scaleY(1);
+                -webkit-transform-origin: 0% 100%;
+                        transform-origin: 0% 100%;
+            }
+            }
+
+        </style>
 <body>
     <div class="container">
         <div class="box">
             <img src="https://www.ediya.com/files/menu/IMG_1710147122188.png" alt="">
             <h1>허쉬 스트로베리 초콜릿</h1>
             <button>선물하기</button>
+            <div class="mask">
+                <span>품절입니다. 😑</span>
+            </div>
         </div>
         <div class="box">
             <img src="https://www.ediya.com/files/menu/IMG_1710147136675.png" alt="">
             <h1>(R)허쉬 크리미 카페모카</h1>
             <button>선물하기</button>
+            <div class="mask">
+                <span>품절입니다. 😑</span>
+            </div>
         </div>
         <div class="box">
             <img src="https://www.ediya.com/files/menu/IMG_1710147177670.png" alt="">
             <h1>허쉬 크리미 초콜릿</h1>
             <button>선물하기</button>
+            <div class="mask">
+                <span>품절입니다. 😑</span>
+            </div>
         </div>
         <div class="box">
             <img src="https://www.ediya.com/files/menu/IMG_1710147145577.png" alt="">
-            <h1>(L)허쉬 크리미 카페모카></h1>
+            <h1>(L)허쉬 크리미 카페모카</h1>
             <button>선물하기</button>
+            <div class="mask">
+                <span>품절입니다. 😑</span>
+            </div>
         </div>
     </div>    
 </body>
