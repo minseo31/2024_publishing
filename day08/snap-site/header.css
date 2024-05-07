@@ -1,0 +1,110 @@
+.overlay{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 2;
+    background: #00000051;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+
+header{
+    width: 100vw;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #000;
+}
+
+/* 헤더 상단 컨텐츠 */
+.header__top{
+    max-width: 1200px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 왼쪽 메뉴 */
+.header__left{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+}
+
+/* 로고 */
+.header__cotent-logo{
+    width: 20%;
+    height: 100%;
+}
+
+/* 메뉴 공통 */
+.header__content-menu{
+    list-style: none;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 메뉴 아이템 공통 */
+.header__menu-item{
+    width: 100px;
+    height: auto;
+    display: flex;
+    padding-left: 5%;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* 돋보기 아이콘 */
+.header__content-menu > i{
+    font-size: 25px;
+    color: white;
+    padding-top: 5px;
+}
+
+/* 헤더 하단 컨텐츠 */
+.header__bottom{
+    max-width: 1200px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.bottom{
+    gap: 15px;
+    padding-left: 15px;
+}
+
+/* 하단 컨텐츠 아이템 */
+.header__bottom-item{
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* 견적내기 버튼 */
+.header__bottom-btn{
+    width: 100px;
+    height: 50%;
+    border: none;
+    border-radius: 5px;
+}
