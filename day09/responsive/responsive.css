@@ -1,0 +1,85 @@
+.container{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+ul{
+    font-size: 40px;
+    
+}
+
+.i{
+    display: none;
+}
+
+.list{
+    display: none;
+}
+
+
+/* 태블릿 */
+@media screen and (min-width: 768px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .list{
+        display: block;
+    }
+}
+
+/* 데스크탑 */
+@media screen and (min-width: 1024px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .i{
+        display: block;
+    }
+
+    .list{
+        display: none;
+    }
+}
+
+
+/* 데스크 탑 */
+@media screen and (min-width: 1200px) {
+    .container{
+        margin: 0 auto;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width: 600px) {
+    .container{
+        margin: 0 auto;
+    }
+}
